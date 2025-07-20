@@ -1,0 +1,147 @@
+img {
+   border-radius: 50%;
+}
+
+body {
+   margin: 0;
+   font-family: 'Segoe UI', sans-serif;
+   background-color: #111;
+   color: #fff;
+
+   background-image: url('Profile bg.webp');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   text-align: center;
+   padding: 20px;
+}
+
+.btn {
+   display: inline-block;
+   margin: 20px;
+   padding: 15px 30px;
+   border: 2px solid #ff0000;
+   color: #ffffff;
+   background-color: transparent;
+   font-size: 20px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.btn:hover {
+   background-color: #ff0000;
+   color: #111;
+}
+
+.highlight-box {
+   background: rgba(70, 1, 1, 0.6);
+   box-shadow: 0 0 25px rgba(255, 0, 0, 1);
+   padding: 40px;
+   border-radius: 20px;
+}
+
+.back-link {
+   margin-top: 30px;
+   display: inline-block;
+   color: #ff00008e;
+   font-size: 18px;
+}
+
+p {
+  font-size: 17px;
+}
+
+li {
+  font-size: 27px;
+}
+
+.about-layout {
+  display: flex;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(70, 1, 1, 0.6);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 1);
+  border-radius: 20px;
+}
+
+.about-left {
+  flex: 1;
+  text-align: left;
+}
+
+.about-left ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-left li {
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #ff5555;
+}
+
+.back-link {
+  margin-top: 40px;
+  display: inline-block;
+  color: #ff0000;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .about-layout {
+    flex-direction: column;
+  }
+}
+
+.game-layout {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.game-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.game-images img {
+  height: 100px;
+  border-radius: 10px;
+}
+
+.game-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 200px;
+}
+
+@media (max-width: 600px) {
+  .game-layout {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .game-text {
+    min-height: auto;
+  }
+}
